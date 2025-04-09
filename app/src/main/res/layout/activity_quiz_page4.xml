@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quizLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress: "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TextWithName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:textColorHighlight="@color/design_default_color_on_secondary"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"/>
+
+    <TextView
+        android:id="@+id/question1Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 3: How many pass tasks do you need to complete?"
+        android:textSize="28sp"
+        android:textColor="@color/material_dynamic_secondary50"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Question" />
+
+    <ImageView
+        android:id="@+id/DeakinImage"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:contentDescription="Quiz Image"
+        android:src="@drawable/img" />
+</LinearLayout>
